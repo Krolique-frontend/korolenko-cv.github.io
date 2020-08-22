@@ -12,6 +12,7 @@ for (i=0; i<tabs.length; i++) {
     let tab = tabs[i];
 
     tab.addEventListener('click', function (event) {
+        event.preventDefault();
         let tabAttr = tab.getAttribute('href').slice(1);
         let containerId = document.getElementById(tabAttr);
         let activeContainers = document.getElementsByClassName('active');
