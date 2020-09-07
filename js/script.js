@@ -29,8 +29,21 @@ for (i=0; i<tabs.length; i++) {
 
         this.classList.add("active");
         containerId.classList.add('active');
-
     });
 }
+
+let arrow = document.getElementById('arrow');
+let funnyList = document.getElementById('funnyList');
+arrow.innerHTML = '>';
+
+arrow.onclick = function() {
+    if (funnyList.style.display == 'block') {
+        arrow.innerHTML = '>';
+        funnyList.style.display = 'none';
+    } else {
+        arrow.innerHTML = '<';
+        funnyList.style.display = 'block';
+    }
+};
 
 
