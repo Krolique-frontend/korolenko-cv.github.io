@@ -1,0 +1,716 @@
+@charset "UTF-8";
+
+/*CSS Document*/
+/*
+font-family: 'vidaloka_regular';
+font-family: 'back_to_black_demoregular';
+font-family: 'FontAwesome';
+*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  width: 100%;
+  font-family: 'vidaloka_regular';
+}
+
+header {
+  padding-top: 60px;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+}
+
+section {
+  padding: 10% 0;
+  text-align: center;
+}
+
+/* Banner home > */
+.banner_home {
+  position: relative;
+  left: 0;
+  z-index: 1;
+  background: url(../img/fone-home.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 9%;
+  padding-top: 0;
+  width: 100%;
+}
+
+#slider_banner .owl-item .item h2 {
+  margin-top: 280px;
+  color: #fff;
+  font-family: 'back_to_black_demoregular';
+  font-size: 70px;
+}
+
+#slider_banner .owl-item .item .text-slider {
+  font-size: 200px;
+  color: #fff;
+  font-family: 'back_to_black_demoregular';
+  margin-top: -15px;
+}
+
+/* < Banner home */
+
+
+
+/* menu > */
+.responsive_menu {
+  display: none;
+}
+
+.nav-menu {
+  padding-top: 18px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 26px;
+  border-bottom: solid 1px #7f7879;
+}
+
+.nav-menu ul {
+  display: flex;
+}
+
+.nav-menu ul li {
+  list-style: none;
+  margin-right: 44px;
+}
+
+.nav-menu ul li:last-child {
+  margin-right: 0;
+}
+
+.nav-menu ul li a {
+  transition: 0.1s;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.nav-menu ul li.active a,
+.nav-menu ul li a:hover {
+  text-decoration: none;
+  padding-bottom: 37px;
+  color: rgb(255, 235, 59);
+  border-bottom: solid 2px rgb(255, 235, 59);
+}
+
+.btn_search {
+  font-size: 0;
+  background: url(../img/search.png) no-repeat;
+  background-position: center center;
+  width: 30px;
+  height: 30px;
+  border: inherit;
+  border-left: 1px solid #a29c9a;
+  outline: none;
+  cursor: pointer;
+}
+
+.area_search {
+  display: none;
+  outline: none;
+  transition: 0.3s;
+  opacity: 0.8;
+  padding-left: 5px;
+  height: 30px;
+  border: none;
+}
+
+.form_search {
+  margin-top: 12px;
+  position: relative;
+    right: 112px;
+}
+/* < menu */
+
+
+
+/* Service > */
+
+.service h2 {
+  font-family: 'vidaloka_regular';
+  font-size: 34px;
+}
+
+.service h3 u {
+  color: rgb(255, 235, 59);
+}
+
+.service h3 {
+  font-family: 'vidaloka_regular';
+  font-size: 34px;
+  padding-bottom: 160px;
+}
+
+.service .srvc_block {
+  padding-bottom: 190px;
+}
+
+.service .srvc_txt {
+  width: 80%;
+  float: right;
+  margin-left: 0;
+  padding-left: 30px;
+  border-left: solid 1px #f1f1f1;
+  text-align: left;
+}
+
+.service .srvc_block .btn_srvc {
+  margin-top: 0;
+  float: left;
+  font-size: 35px;
+  color: #969595;
+}
+
+.service .srvc_block .srvc_txt h4 {
+  margin-top: 0;
+  padding-bottom: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'vidaloka_regular';
+}
+
+.service .srvc_block .srvc_txt p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #969595;
+}
+
+.service .srvc_block:hover i {
+  color: rgb(255, 235, 59);
+}
+
+.service .srvc_block:hover .srvc_txt {
+  border-left: solid 1px rgb(255, 235, 59);
+}
+
+/* < Service */
+
+
+
+/* COUNTERS > */
+.counters {
+  background-image: url(../img/bg-footer.jpg);
+}
+
+.counters .cntrs_blck {
+  font-family: 'vidaloka_regular';
+}
+
+.counters .cntrs_logo i {
+  font-size: 50px;
+  color: rgb(255, 235, 59);
+}
+
+.counters .cntrs_blck h2 {
+  font-size: 60px;
+  color: #fff;
+  padding: 50px 0px;
+}
+
+.counters p {
+  text-transform: uppercase;
+  color: rgb(255, 235, 59);
+  font-size: 17px;
+  margin: 0;
+}
+
+/* < COUNTERS */
+
+
+
+/* Portfolio > */
+.portfolio {
+  padding-bottom: 0;
+}
+
+.portfolio .gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.head_portfolio h2 {
+  font-family: 'vidaloka_regular';
+  font-size: 36px;
+  color: #333;
+  padding-bottom: 40px;
+}
+
+.head_portfolio p {
+  font-size: 16px;
+  color: #333;
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tab_portfolio .nav-pills {
+  border-bottom: inherit;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  padding: 120px 0;
+}
+
+.tab_portfolio .nav-pills li {
+  margin: 2%;
+  margin-bottom: -1px;
+  border: solid 2px rgb(255, 235, 59);
+  margin-left: 10px;
+}
+
+.tab_portfolio .nav-pills>li a {
+  color: #555;
+}
+
+.tab_portfolio .nav-pills>li.active>a,
+.tab_portfolio .nav-pills>li.active>a:focus,
+.tab_portfolio .nav-pills>li.active>a:hover,
+.tab_portfolio .nav-pills>li>a:hover {
+  color: #555;
+  cursor: default;
+  background-color: rgb(255, 235, 59);
+  border-bottom-color: inherit;
+  border-radius: unset;
+}
+
+.portfolio .gallery .imgbox,
+.portfolio .gallery .imgbox .sub_imgbox1,
+.portfolio .gallery .imgbox .sub_imgbox3,
+.portfolio .gallery .imgbox .sub_imgbox2 .sub_sub_imgbox2,
+.portfolio .gallery .imgbox .sub_imgbox3 .sub_sub_imgbox3 {
+  display: flex;
+}
+
+.portfolio .gallery .imgbox .sub_imgbox2 {
+  display: flex;
+  flex-flow: wrap;
+  max-width: 1420px;
+}
+
+.portfolio .gallery .imgbox img {
+  max-width: 100%;
+}
+
+.tab-content>.active a{
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio .gallery .imgbox .sub_sub_sub_imgbox2,
+.portfolio .gallery .imgbox .sub_sub_imgbox3 {
+  position: relative;
+}
+
+.portfolio .gallery .tab-pane .sub_imgbox2 .sub_sub_imgbox2 .sub_sub_sub_imgbox2 .shade,
+.portfolio .gallery .tab-pane .sub_imgbox3 .sub_sub_imgbox3 .shade {
+  display: none;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  padding: 10% 0;
+  z-index: 2;
+  background: rgba(255, 235, 59, 0.75);
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-family: 'vidaloka_regular';
+}
+
+.portfolio .gallery .tab-pane .shade h2 {
+  margin: 0;
+  font-size: 24px;
+  padding-left: 5%;
+}
+
+.portfolio .gallery .tab-pane .sub_imgbox3 .shade h2 {
+  padding-top: 5%;
+}
+
+.portfolio .gallery .tab-pane .shade p {
+   padding: 9% 5%;
+   font-size: 14px;
+   font-family: sans-serif;
+}
+
+.portfolio .gallery .tab-pane .sub_imgbox1 .shade p {
+  padding: 30% 5%;
+}
+
+.portfolio .gallery .tab-pane .shade .shade_btn {
+  display: block;
+  width: 145px;
+  height: 47px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 11px;
+  margin-left: 5%;
+  border: 2px solid;
+  color: rgb(0, 0, 0);
+}
+
+.portfolio .gallery .tab-pane .sub_imgbox2 .sub_sub_imgbox2 .sub_sub_sub_imgbox2:hover .shade,
+.portfolio .gallery .tab-pane .sub_imgbox3 .sub_sub_imgbox3:hover .shade{
+  display: block;
+}
+
+.portfolio .gallery .tab-pane .shade .shade_btn:hover {
+  background: rgba(0, 0, 0, 0.75);
+  color: rgb(255, 235, 59);
+}
+/* < Portfolio */
+
+
+
+/* SERVICE > */
+.crtv_service .crtv_hdr h2 {
+  font-family: 'vidaloka_regular';
+  padding-bottom: 40px;
+}
+
+.crtv_service .crtv_hdr p {
+  padding-bottom: 130px;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.crtv_service .crtv_block {
+  padding: 80px 40px 60px 40px;
+  margin: 15px auto;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+.crtv_service .crtv_block h4 {
+  font-family: 'vidaloka_regular';
+  padding: 0;
+}
+
+.crtv_service .crtv_block p {
+  margin: 40px 0;
+}
+
+.crtv_service .crtv_block a {
+  color: rgb(255, 235, 59);
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+  transition: all 0.5s ease-in;
+}
+
+.crtv_service .container .row2 div:nth-child(1) .crtv_block {
+  background: #ff5252;
+}
+
+.crtv_service .container .row2 div:nth-child(2) .crtv_block {
+  background: #4caf50;
+}
+
+.crtv_service .container .row2 div:nth-child(3) .crtv_block {
+  background: #673ab7;
+}
+
+.crtv_service .container .row2 div:nth-child(4) .crtv_block {
+  background: #2196f3;
+}
+
+.crtv_service .container .row2 div:nth-child(5) .crtv_block {
+  background: #ff46f8;
+}
+
+.crtv_service .container .row2 div:nth-child(6) .crtv_block {
+  background: #00bcd4;
+}
+
+.crtv_service .container .row2 div .crtv_block:hover,
+.crtv_service .container .row2 div .crtv_block:hover a {
+  background: rgb(255, 235, 59);
+  color: black;
+}
+
+/* < SERVICE */
+
+
+
+/* OUR CLIENT > */
+.our_client {
+  position: relative;
+  left: 0;
+  z-index: 1;
+  background: url(../img/bg-footer.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  text-align: left;
+}
+
+.our_client h2 {
+  color: #fff;
+  font-size: 36px;
+  padding-bottom: 45px;
+  font-family: 'vidaloka_regular';
+}
+
+.our_client p {
+  font-size: 16px;
+  color: #fff;
+}
+
+#slide_our_client .owl-item .clnt_imgbox {
+  display: flex;
+  justify-content: space-around;
+  padding: 5% 0;
+}
+
+#slide_our_client .owl-item .clnt_imgbox img {
+  max-width: 100%;
+  width: auto;
+}
+
+.our_client .customdot {
+  display: flex;
+  justify-content: center;
+}
+
+ .our_client .customdot .owl-dots .owl-dot {
+
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #D6D6D6;
+  -webkit-appearance: media-slider;
+  transition: opacity .2s ease;
+}
+
+.our_client .customdot:hover {
+  cursor: pointer;
+}
+
+.our_client .customdot .owl-dots .owl-dot.active,
+.our_client .customdot .owl-dots .owl-dot:hover {
+  background: rgb(255, 235, 59);
+}
+
+
+/* < OUR CLIENT */
+
+
+
+/* ABOUT > */
+
+.about .about_hdr h2 {
+  font-family: 'vidaloka_regular';
+}
+
+.about .about_hdr p {
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.about .about_block {
+  border: solid 1px #f1f1f1;
+}
+
+.about .about_block img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.about .about_block .about_txt {
+  border-bottom: solid 1px #f1f1f1;
+  padding: 30px 0;
+}
+
+.about .about_block .about_txt h4 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'vidaloka_regular';
+  padding-bottom: 30px;
+}
+
+.about .about_block .about_txt p {
+  font-size: 15px;
+  color: #969595;
+  padding: 0 45px;
+}
+
+.about .about_block .about_social {
+  padding: 20px 0;
+}
+
+.about .about_block .about_social span {
+  display: inline-block;
+  margin: 0 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: solid 1px #969595;
+}
+
+.about .about_block .about_social i {
+  color: #969595;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.about .about_block .about_social span:hover {
+  background: rgb(255, 235, 59);
+  border: solid 1px rgb(255, 235, 59);
+  color: #fff;
+}
+
+/* < ABOUT */
+
+
+
+/* CONTACT > */
+.contact {
+  padding: 0;
+  background-image: url(../img/bg-footer.jpg);
+}
+
+.contact .cntct_opacity {
+  background: rgba(255, 255, 255, 0.1);
+  padding-top: 150px;
+  padding-bottom: 110px;
+}
+
+.contact .contact_hdr h2 {
+  font-size: 50px;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'vidaloka_regular';
+
+}
+
+.contact .contact_hdr p {
+  max-width: 440px;
+  margin: 40px auto;
+  font-size: 16px;
+  color: #969595;
+}
+
+.contact textarea::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+.contact textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  height: 50px;
+  max-width: 460px;
+  opacity: 0.4;
+  font-size: 15px;
+  overflow: hidden;
+  padding-left: 25px;
+  padding-top: 15px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+
+.contact .contact_btn button{
+  height: 50px;
+    background: rgb(255, 235, 59);
+    border-radius: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: #000;
+    font-weight: bold;
+    width: 140px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.contact .contact_btn button:active,
+.contact .contact_btn button.active:focus {
+    color: rgb(255, 235, 59);
+    background-color: #204d74;
+    outline: none;
+    border: none;
+  }
+
+/* < CONTACT */
+
+
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  padding: 50px 0;
+  background-image: url(../img/bg-footer.jpg);
+}
+
+footer .share42 {
+  height: 32px;
+}
+
+footer .share42init {
+  width: 114px;
+  margin: 0 auto;
+}
+footer .share42init span {
+  position: absolute;
+}
+
+footer .footer_logo {
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer .footer_logo img {
+  width: 168px;
+  height: 49px;
+  display: block;
+  margin: 0 auto;
+}
+
+footer .container .footer_btn {
+  display: flex;
+  justify-content: center;
+}
+
+footer .container .footer_btn button {
+  background: rgb(255, 235, 59);
+  color: rgb(0, 0, 0);
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+  text-shadow: none;
+  font-weight: bold;
+}
+
+footer .container .footer_btn button:active,
+footer .container .footer_btn button.active:focus {
+  color: rgb(255, 235, 59);
+  background-color: #204d74;
+  outline: none;
+  border: none;
+}
+
+footer .copyright p {
+  font-family: 'vidaloka_regular';
+  color: #fff;
+  text-align: center;
+  margin: 30px auto;
+}
+
+footer .copyright p span {
+  color: rgb(255, 235, 59);
+}
